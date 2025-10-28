@@ -1,6 +1,6 @@
-# Hikanner Homebrew Tap
+# Homebrew Tap for Jta
 
-Official Homebrew tap for Hikanner projects.
+Official Homebrew tap for [Jta](https://github.com/hikanner/jta) - AI-powered Agentic JSON Translation tool.
 
 ## Installation
 
@@ -9,20 +9,33 @@ brew tap hikanner/jta
 brew install jta
 ```
 
-## Available Formulas
+## What is Jta?
 
-- **jta** - AI-powered Agentic JSON Translation tool using Andrew Ng's reflection approach
+Jta is an AI-powered JSON translation tool that follows Andrew Ng's agentic reflection approach. It supports multiple AI providers (OpenAI, Anthropic, Gemini) and includes features like:
+
+- 🤖 Agentic reflection mechanism for high-quality translations
+- 📚 Terminology management system
+- 🔄 Incremental translation support
+- 🌍 RTL language support (Arabic, Hebrew, Persian, Urdu)
+- 🎯 Key filtering with wildcard patterns
+- 🛡️ Format protection (HTML, Markdown, URLs, placeholders)
 
 ## Usage
 
-After installation:
+After installation, you can use the `jta` command:
 
 ```bash
 # Check version
 jta --version
 
 # Translate a JSON file
-jta translate -s en -t es input.json
+jta translate -s en -t es input.json -o output.json
+
+# Use with terminology
+jta translate -s en -t zh input.json --terminology .jta/
+
+# See all options
+jta --help
 ```
 
 ## Updating
@@ -34,10 +47,11 @@ brew upgrade jta
 
 ## More Information
 
-- [Jta Repository](https://github.com/hikanner/jta)
-- [Jta Documentation](https://github.com/hikanner/jta#readme)
+- **Project Repository**: [hikanner/jta](https://github.com/hikanner/jta)
+- **Documentation**: [README](https://github.com/hikanner/jta#readme)
+- **Issue Tracker**: [Issues](https://github.com/hikanner/jta/issues)
+- **Releases**: [Releases](https://github.com/hikanner/jta/releases)
 
-## Support
+## About this Tap
 
-For issues and questions:
-- [Issue Tracker](https://github.com/hikanner/jta/issues)
+This tap is automatically maintained by [GoReleaser](https://goreleaser.com/). When a new version of Jta is released, the formula is automatically updated.
