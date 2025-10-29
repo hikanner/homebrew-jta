@@ -5,21 +5,21 @@
 class Jta < Formula
   desc "AI-powered Agentic JSON Translation tool"
   homepage "https://github.com/hikanner/jta"
-  version "1.0.0"
+  version "1.1.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/hikanner/jta/releases/download/v1.0.0/jta_Darwin_x86_64.tar.gz"
-      sha256 "70e521986154922c0d37528d1f9de709cc96e2ee03e155c2f444cf406f0d1d26"
+      url "https://github.com/hikanner/jta/releases/download/v1.1.0/jta_Darwin_x86_64.tar.gz"
+      sha256 "c9c95b49cb30bcfcdc3fa4baf941a9e64a9b5785205575835caf63228d521c9e"
 
       def install
         bin.install "jta"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/hikanner/jta/releases/download/v1.0.0/jta_Darwin_arm64.tar.gz"
-      sha256 "8e910976fe80255d74aec9958e0dfa581825b2a8e060f5943f3b640c6078191e"
+      url "https://github.com/hikanner/jta/releases/download/v1.1.0/jta_Darwin_arm64.tar.gz"
+      sha256 "9defa63992f6c5bd95adc54ec0ff09ef7622f40a99b50a8c909c714926cf26b4"
 
       def install
         bin.install "jta"
@@ -29,15 +29,15 @@ class Jta < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/hikanner/jta/releases/download/v1.0.0/jta_Linux_x86_64.tar.gz"
-      sha256 "047efca53067e65bb90a459a85832efc93408bdd040aef53efff116922b4722f"
+      url "https://github.com/hikanner/jta/releases/download/v1.1.0/jta_Linux_x86_64.tar.gz"
+      sha256 "f9b1bb111f5ceff0c9cfc199b7ffe7e4993f27c3609ed3ba06b8cfb8207837d7"
       def install
         bin.install "jta"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/hikanner/jta/releases/download/v1.0.0/jta_Linux_arm64.tar.gz"
-      sha256 "8f6af12dd2108ef3e00dee5123b3ed46f895b4b5be94980445ee6b9bf630cfcf"
+      url "https://github.com/hikanner/jta/releases/download/v1.1.0/jta_Linux_arm64.tar.gz"
+      sha256 "ff10f2068f09ccf4b4583e3b7d8f2d3483aed6b362e04457b43cecce791500b6"
       def install
         bin.install "jta"
       end
