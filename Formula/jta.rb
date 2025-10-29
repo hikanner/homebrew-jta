@@ -11,7 +11,7 @@ class Jta < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/hikanner/jta/releases/download/v1.1.0/jta_Darwin_x86_64.tar.gz"
-      sha256 "c9c95b49cb30bcfcdc3fa4baf941a9e64a9b5785205575835caf63228d521c9e"
+      sha256 "de42052724c9ae72cc82fbd16f6170cfaff0ab5723114cb911f39ee1cb0588fd"
 
       def install
         bin.install "jta"
@@ -19,7 +19,7 @@ class Jta < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/hikanner/jta/releases/download/v1.1.0/jta_Darwin_arm64.tar.gz"
-      sha256 "9defa63992f6c5bd95adc54ec0ff09ef7622f40a99b50a8c909c714926cf26b4"
+      sha256 "12a58c48d7532eb24c0dd17283e6524c55049b7460170b5452f93dc3a75e7d53"
 
       def install
         bin.install "jta"
@@ -30,14 +30,14 @@ class Jta < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/hikanner/jta/releases/download/v1.1.0/jta_Linux_x86_64.tar.gz"
-      sha256 "f9b1bb111f5ceff0c9cfc199b7ffe7e4993f27c3609ed3ba06b8cfb8207837d7"
+      sha256 "41a0e37faac0080856fca245c1dfc1f0b867d67c8dadd26c41396cf732bc6388"
       def install
         bin.install "jta"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/hikanner/jta/releases/download/v1.1.0/jta_Linux_arm64.tar.gz"
-      sha256 "ff10f2068f09ccf4b4583e3b7d8f2d3483aed6b362e04457b43cecce791500b6"
+      sha256 "4b9cdce62a2fd4582a9331696349428e1e10850511f27a6f64b96484e75c391c"
       def install
         bin.install "jta"
       end
